@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/form.css">
+
+<div class="contenedor">
+    <h1>Formulario de registro</h1>
+</div>
+
+<div class="contenedor">
+    <form style="width: 50%" action="http://localhost:3000/user/register" method="post">
+        <div class="row">
+            <div class="col-25"> <label for="fname">Nombre de usuario</label> </div>
+            <div class="col-75"> <input type="text" id="fname" name="username" placeholder="" required> </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-25"> <label>Correo electronico</label> </div>
+            <div class="col-75"> <input type="email" name="email" placeholder="" required> </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-25"> <label>Contraseña</label> </div>
+            <div class="col-75"> <input type="password" name="password" placeholder="" required> </div>
+        </div>
+
+        <div class="row centrar mt"><input type="submit" value="Registrarme" class="btn-aqua"></div>
+    </form>
+</div>

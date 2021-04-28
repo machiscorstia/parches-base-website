@@ -1,0 +1,13 @@
+{{#if successEvent}}
+    <div class="alerta-info">
+        <span class="alerta-cerrar" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p>{{successEvent}}</p>
+    </div>
+{{/if}}
+
+{{#if failureEvent}}
+    <div class="alerta-error">
+        <span class="alerta-cerrar" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p>{{failureEvent}}</p>
+    </div>
+{{/if}}

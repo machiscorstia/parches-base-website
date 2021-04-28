@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+
+  <link rel='stylesheet' href='/css/main.css' />
+  <link rel='stylesheet' href='/css/alert.css' />
+  <link rel='stylesheet' href='/css/topnav.css' />
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="topnav">
+
+    <!-- Centro -->
+    <div class="topnav-centro">
+      <a href="/" class="active">Armeria Parches</a>
+    </div>
+
+    <!-- Izquierda -->
+    <a href="/popular">Popular</a>
+    <a href="/recent">Reciente</a>
+
+    <!-- Derecha -->
+    <div class="topnav-derecha">
+      <a href="/user/login">Ingresar</a>
+      <a href="/user/register">Registrar</a>
+    </div>
+
+  </div>
+
+  {{> event}}
+
+  <div class="maincontainer">
+    {{{body}}}
+  </div>
+
+  <div class="footer centrar">
+    <p>Derechos reservados: Parches</p>
+  </div>
+
+</body>
+
+</html>

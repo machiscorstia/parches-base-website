@@ -1,0 +1,57 @@
+.topnav {
+  position: relative;
+  background-color:  rgb(46, 46, 46);
+  overflow: hidden;
+}
+  
+
+.topnav a {
+  transition: 0.3s;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+  
+.topnav a:hover {
+  text-decoration: none;
+  background-color: #ddd;
+  color: black;
+}
+  
+.topnav a.active {
+  background-color:teal;
+  color: white;
+  text-decoration: none;
+}
+  
+.topnav-centro a {
+  font-size: larger;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+
+.topnav-derecha {
+  float: right;
+}
+  
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-derecha {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centro a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
